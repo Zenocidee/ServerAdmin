@@ -1,3 +1,5 @@
+
+
 FROM php:7.4.15-apache
 COPY . /var/www/html/
 RUN chown -R $USER:www-data /var/www
