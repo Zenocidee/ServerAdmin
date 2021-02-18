@@ -14,6 +14,7 @@ if (mysqli_num_rows($hasil) > 0) {
    	$temp = $temp + 1;
     	echo "<br>id: " . $row["ID"]. "<br>" .  "Name: " . $row["Nama"]. "<br>" . "Kantor: " . 		$row["Kantor"]. "<br><br>";
 }
+}
 
 mysqli_close($conn);
 ?>
