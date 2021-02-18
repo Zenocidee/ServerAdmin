@@ -1,4 +1,3 @@
-
 <?php
 $conn = mysqli_connect("172.18.0.2","root","root", "trucorp-db");
 if (!$conn){
@@ -14,10 +13,6 @@ if (mysqli_num_rows($hasil) > 0) {
   while($row = mysqli_fetch_assoc($hasil)) {
    	$temp = $temp + 1;
     	echo "<br>id: " . $row["ID"]. "<br>" .  "Name: " . $row["Nama"]. "<br>" . "Kantor: " . 		$row["Kantor"]. "<br><br>";
-}
- echo "<br>Banyak User = " . $temp;
-} else {
-  echo "Tidak ada User";
 }
 
 mysqli_close($conn);
